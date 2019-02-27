@@ -1,24 +1,44 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+const style={
+  'fontSize': '75px',
+  'textAlign': 'center'
+}
+const button={
+  'margin': '50px',
+  'background': 'white',
+  'border': '1px solid red',
+  'width': '300px',
+  'height': '100px',
+  'cursor': 'pointer',
+  'fontSize': '25px'
+}
+
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      state: []
+    }
+  }
+
   render() {
+    
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
+          <p style={style}>
+            HTTP-AJAX
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <input
+            className="App-input"
+            type="text"
+            value="API test..."
+            style={style}
+          />
+          <button style={button}>Save this info</button>
         </header>
       </div>
     );
