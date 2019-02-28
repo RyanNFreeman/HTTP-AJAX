@@ -19,9 +19,6 @@ const button={
 class App extends Component {
   constructor(){
     super();
-    this.state = {
-      friends: []
-    }
   }
 
   render() {
@@ -31,19 +28,19 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p style={style}>
-            HTTP-AJAX
+            LOOK AT YOU MR. POPULAR
+            <hr/>
           </p>
+
           <input
             className="App-input"
             type="text"
-            value="API test..."
+            value="Add more friends..."
             style={style}
           />
           <Friends />
-          <Friends />
-          <Friends />
-
-          <button style={button}>Save this info</button>
+          {/* <FriendForm /> */}
+          <button style={button}>Add a new friend!</button>
         </header>
       </div>
     );
