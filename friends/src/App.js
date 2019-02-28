@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Friends from './components/Friends'
 import './App.css';
 
 const style={
@@ -19,7 +20,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      state: []
+      friends: []
     }
   }
 
@@ -38,6 +39,10 @@ class App extends Component {
             value="API test..."
             style={style}
           />
+          <Friends />
+          <Friends />
+          <Friends />
+
           <button style={button}>Save this info</button>
         </header>
       </div>
